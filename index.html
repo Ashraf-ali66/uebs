@@ -44,7 +44,8 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"> <img src="./img/logo2.png" style="width:10%">&ensp;United English Boarding School</h2>
+            <img src="./img/logo2.png" alt="UEBS Logo" style="width:40px; height:auto; max-width:100%;">
+            <span class="ms-2 fw-bold text-primary logo-text" style="font-size:1.2rem; white-space:nowrap;">United English Boarding School</span>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -69,6 +70,29 @@
             <a href="admission.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
+    <style>
+    /* Responsive logo text for navbar */
+    @media (max-width: 991.98px) {
+      .logo-text {
+        font-size: 1rem !important;
+        white-space: normal !important;
+        text-align: left;
+        display: inline-block;
+      }
+      .navbar-brand img {
+        width: 32px !important;
+      }
+    }
+    @media (max-width: 575.98px) {
+      .logo-text {
+        font-size: 0.9rem !important;
+      }
+      .navbar-brand {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+      }
+    }
+    </style>
     <!-- Navbar End -->
 
 
